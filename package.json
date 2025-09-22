@@ -1,0 +1,28 @@
+{
+  "name": "gestor-obres",
+  "version": "0.0.0",
+  "description": "Aplicació Gestor d'Obres (portable-aware)",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build:portable": "electron-builder --linux --win --mac",
+    "ci:verify": "node scripts/verify-portable.js"
+  },
+  "build": {
+    "appId": "com.jaumand.gestor-obres",
+    "files": [
+      "main.js",
+      "preload.js",
+      "renderer/**/*",
+      "lib/**/*",
+      "package.json"
+    ],
+    "directories": {
+      "buildResources": "build"
+    }
+  },
+  "devDependencies": {
+    "electron": "^26.0.0",
+    "electron-builder": "^24.0.0"
+  }
+}
