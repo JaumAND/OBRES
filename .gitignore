@@ -1,0 +1,18 @@
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Build output
+dist/
+build/
+out/
+
+# Runtime DBs and env
+*.db
+*.sqlite
+.env
+
+# OS
+.DS_Store
+Thumbs.db
